@@ -193,7 +193,11 @@ public class CalendarMonthly {
 		int daysInMonth = cal.getActualMaximum(Calendar.DAY_OF_MONTH);
 
 		for(int x = 6+ dayOfWeek, day = 1; day <= daysInMonth; x++, day++){
-			dayButton[x].setText("" + day);
+			 if (eventMonth == month+1 && eventDay == day ) {
+               		 	dayButton[x].setText("" + day  + "*");
+            		} else {
+                		dayButton[x].setText("" + day);
+           		}
 			
 			if (day == cal2.get(Calendar.DATE) && month == cal2.get(Calendar.MONTH) && year == cal2.get(Calendar.YEAR)) {	// Current Day
 				dayButton[x].setBackground(new Color(51,153,255));
