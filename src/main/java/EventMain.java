@@ -56,11 +56,11 @@ public class EventMain {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
                 frame.setTitle("Reservation Room");
-		
-     
-                 
-                 
-		JLabel lblAddEvent = new JLabel("Reservation Room");
+
+
+
+
+		JLabel lblAddEvent = new JLabel("Room Reservation");
 		lblAddEvent.setBounds(350, 11, 500, 100);
 		lblAddEvent.setFont(new Font("Berlin Sans FB", Font.PLAIN, 35));
                 lblAddEvent.setForeground(new java.awt.Color(255, 255, 255));
@@ -129,14 +129,14 @@ public class EventMain {
                 JFormattedTextField eventEndTime = new JFormattedTextField();
 		eventEndTime.setBounds(582, 330,100, 30);
 		frame.getContentPane().add(eventEndTime);
-                
-                
 
- 
-		
 
-  
-                JButton btnAdd = new JButton("Reservation");
+
+
+
+
+
+		JButton btnAdd = new JButton("Reserve");
 		btnAdd.setFont(new Font("Berlin Sans FB", Font.PLAIN, 14));
 		btnAdd.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
