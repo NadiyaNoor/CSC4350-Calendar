@@ -165,27 +165,28 @@ public class AddEvent {
 		btnAdd.setFont(new Font("Berlin Sans FB", Font.PLAIN, 14));
 		btnAdd.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-                            
-                            String ename = eventTitle.getText();
-                            String loc = eventLocation.getText();
-							String month = eventStartMonth.getText();
-							String day = eventStartDay.getText();
-                           /**
-                            if(checkEvents(ename))
-                            {
-                                JOptionPane.showMessageDialog(null, "This location ");
-                            }**/
-                            
-                            PreparedStatement ps;
-                            String query = "INSERT INTO Events (EventName,Location) VALUES(?,?)";
-                            
-                            try {
-                                ps = dbconnection.getConnection().prepareStatement(query);
-            
-                                ps.setString(1, ename);
-                                ps.setString(2, loc);
-								ps.setString(2, month);
-								ps.setString(2, day);
+
+                String ename = eventTitle.getText();
+                String loc = eventLocation.getText();
+                String month = eventStartMonth.getText();
+                String day = eventStartDay.getText();
+
+                /**
+                 if(checkEvents(ename))
+                 {
+                 JOptionPane.showMessageDialog(null, "This location ");
+                 }**/
+
+                PreparedStatement ps;
+                String query = "INSERT INTO Events (EventName,Location, Month, Day) VALUES(?,?, ?, ?)";
+
+                try {
+                    ps = dbconnection.getConnection().prepareStatement(query);
+
+                    ps.setString(1, ename);
+                    ps.setString(2, loc);
+                    ps.setString(3, month);
+                    ps.setString(4, day);
                                 
                                 if(ps.executeUpdate() > 0)
                                 {
@@ -234,8 +235,8 @@ public class AddEvent {
 		eventReservation.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
                             
-                          //EventMain event  = new EventMain();
-                          // event.EventMain();
+                        EventMain event  = new EventMain();
+                        event.EventMain();
                            
 			}
 		});
@@ -248,8 +249,8 @@ public class AddEvent {
 		ContactList.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 
-				ContactList contactList = new ContactList();
-				//contactList.ContactList();
+                		ContactList contactlist = new  ContactList();
+				contactlist.ContactList();
                            
 			}
 		});
