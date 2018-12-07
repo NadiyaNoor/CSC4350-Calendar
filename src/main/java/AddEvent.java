@@ -250,7 +250,8 @@ public class AddEvent {
 			public void actionPerformed(ActionEvent e) {
 
                 		ContactList contactlist = new  ContactList();
-				contactlist.ContactList();
+                		contactlist.activateList();
+                		//contactlist.ContactList();
                            
 			}
 		});

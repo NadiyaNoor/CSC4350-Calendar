@@ -1,4 +1,5 @@
 import java.text.DecimalFormat;
+import java.net.*;
 import java.util.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -175,7 +176,7 @@ public class CalendarMonthly {
 	}
 
 
-	void updateMonth() {	
+	void updateMonth(){	
 		Calendar cal2 = new GregorianCalendar();
 		int year = cal.get(Calendar.YEAR);
 		monthLabel.setText(cal.getDisplayName(Calendar.MONTH, Calendar.LONG, Locale.US) + " " + year);
@@ -202,16 +203,40 @@ public class CalendarMonthly {
 			if (day == cal2.get(Calendar.DATE) && month == cal2.get(Calendar.MONTH) && year == cal2.get(Calendar.YEAR)) {	// Current Day
 				dayButton[x].setBackground(new Color(51,153,255));
 				if (CalendarLogin.isCloudy()) {
-					dayButton[x].setIcon(new ImageIcon("C:\\Users\\Xander.IMPERATOR\\Documents\\Actual Documents\\Software Engineering\\MavenExample2\\src\\main\\resources\\Cloudy.PNG"));
+					try {
+					    URL cloudyURL = new URL("https://i.imgur.com/AcUNH1H.png");
+					    dayButton[x].setIcon(new ImageIcon(cloudyURL));
+					} 
+					catch (MalformedURLException e) {
+						System.out.println("oops");
+					}
 				}
 				else if (CalendarLogin.isRainy()) {
-					dayButton[x].setIcon(new ImageIcon("C:\\Users\\Xander.IMPERATOR\\Documents\\Actual Documents\\Software Engineering\\MavenExample2\\src\\main\\resources\\Rainy.PNG"));
+					try {
+					    URL rainyURL = new URL("https://i.imgur.com/0141Z3t.png");
+					    dayButton[x].setIcon(new ImageIcon(rainyURL));
+					} 
+					catch (MalformedURLException e) {
+						System.out.println("oops");
+					}
 				}
 				else if (CalendarLogin.isSnowy()) {
-					dayButton[x].setIcon(new ImageIcon("C:\\Users\\Xander.IMPERATOR\\Documents\\Actual Documents\\Software Engineering\\MavenExample2\\src\\main\\resources\\Snowy.PNG"));
+					try {
+					    URL snowyURL = new URL("https://i.imgur.com/1KtqzM0.png");
+					    dayButton[x].setIcon(new ImageIcon(snowyURL));
+					} 
+					catch (MalformedURLException e) {
+						System.out.println("oops");
+					}
 				}
 				else {
-					dayButton[x].setIcon(new ImageIcon("C:\\Users\\Xander.IMPERATOR\\Documents\\Actual Documents\\Software Engineering\\MavenExample2\\src\\main\\resources\\Sunny.PNG"));
+					try {
+					    URL sunnyURL = new URL("https://i.imgur.com/5pHURGv.png");
+					    dayButton[x].setIcon(new ImageIcon(sunnyURL));
+					} 
+					catch (MalformedURLException e) {
+						System.out.println("oops");
+					}
 				}
 			}else {
 				dayButton[x].setBackground(Color.white);

@@ -1,8 +1,3 @@
-/*
-*
- */
-package se_project;
-
 import java.awt.Color;
 import java.awt.EventQueue;
 
@@ -56,10 +51,10 @@ public class EventMain {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
                 frame.setTitle("Reservation Room");
-
-
-
-
+		
+     
+                 
+                 
 		JLabel lblAddEvent = new JLabel("Room Reservation");
 		lblAddEvent.setBounds(350, 11, 500, 100);
 		lblAddEvent.setFont(new Font("Berlin Sans FB", Font.PLAIN, 35));
@@ -129,14 +124,14 @@ public class EventMain {
                 JFormattedTextField eventEndTime = new JFormattedTextField();
 		eventEndTime.setBounds(582, 330,100, 30);
 		frame.getContentPane().add(eventEndTime);
+                
+                
 
+ 
+		
 
-
-
-
-
-
-		JButton btnAdd = new JButton("Reserve");
+  
+                JButton btnAdd = new JButton("Reserve");
 		btnAdd.setFont(new Font("Berlin Sans FB", Font.PLAIN, 14));
 		btnAdd.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {

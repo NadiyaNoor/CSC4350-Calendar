@@ -19,12 +19,12 @@
     <session id="-2110367654">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="12" />
+          <entry key="project.closed" value="13" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.5" value="4" />
-          <entry key="project.open.time.6" value="6" />
+          <entry key="project.open.time.6" value="7" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="12" />
+          <entry key="project.opened" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -60,7 +60,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/TestClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
+            <state relative-caret-position="238">
               <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -84,8 +84,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/AddEvent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="639">
-              <caret line="251" column="17" selection-start-line="251" selection-start-column="17" selection-end-line="251" selection-end-column="17" />
+            <state relative-caret-position="291">
+              <caret line="252" column="38" selection-start-line="252" selection-start-column="27" selection-end-line="252" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -97,7 +97,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/EventMain.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="676">
-              <caret line="135" lean-forward="true" selection-start-line="135" selection-end-line="135" />
+              <caret line="130" selection-start-line="130" selection-end-line="130" />
             </state>
           </provider>
         </entry>
@@ -105,8 +105,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ContactList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="26" column="22" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="22" />
+            <state relative-caret-position="391">
+              <caret line="27" column="22" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#866#955#0" expanded="true" />
@@ -189,7 +189,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="13" />
     <option name="y" value="-15" />
     <option name="width" value="1400" />
@@ -238,8 +238,8 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544135083059" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544138121326" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
@@ -344,7 +344,7 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.2803838" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.2835821" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" weight="0.329718" />
@@ -448,7 +448,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/TestClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
+        <state relative-caret-position="238">
           <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -498,17 +498,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/EventMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="676">
-          <caret line="135" lean-forward="true" selection-start-line="135" selection-end-line="135" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ContactList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="26" column="22" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="22" />
+        <state relative-caret-position="391">
+          <caret line="27" column="22" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#866#955#0" expanded="true" />
@@ -516,10 +509,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/EventMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="676">
+          <caret line="130" selection-start-line="130" selection-end-line="130" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/AddEvent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="639">
-          <caret line="251" column="17" selection-start-line="251" selection-start-column="17" selection-end-line="251" selection-end-column="17" />
+        <state relative-caret-position="291">
+          <caret line="252" column="38" selection-start-line="252" selection-start-column="27" selection-end-line="252" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

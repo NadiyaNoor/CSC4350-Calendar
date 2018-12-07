@@ -1,4 +1,5 @@
 import java.awt.Color;
+import java.net.*;
 import java.awt.Dimension;
 import java.awt.EventQueue;
 import java.awt.Font;
@@ -185,23 +186,47 @@ public class CalendarDaily {
 		}
 
 		if (CalendarLogin.isCloudy()) {
-			dayButton.setIcon(new ImageIcon("C:\\Users\\Xander.IMPERATOR\\Documents\\Actual Documents\\Software Engineering\\MavenExample2\\src\\main\\resources\\Cloudy.PNG"));
+			try {
+			    URL cloudyURL = new URL("https://i.imgur.com/AcUNH1H.png");
+			    dayButton.setIcon(new ImageIcon(cloudyURL));
+			} 
+			catch (MalformedURLException e) {
+				System.out.println("oops");
+			}
 		}
 		else if (CalendarLogin.isRainy()) {
-			dayButton.setIcon(new ImageIcon("C:\\Users\\Xander.IMPERATOR\\Documents\\Actual Documents\\Software Engineering\\MavenExample2\\src\\main\\resources\\Rainy.PNG"));
+			try {
+			    URL rainyURL = new URL("https://i.imgur.com/0141Z3t.png");
+			    dayButton.setIcon(new ImageIcon(rainyURL));
+			} 
+			catch (MalformedURLException e) {
+				System.out.println("oops");
+			}
 		}
 		else if (CalendarLogin.isSnowy()) {
-			dayButton.setIcon(new ImageIcon("C:\\Users\\Xander.IMPERATOR\\Documents\\Actual Documents\\Software Engineering\\MavenExample2\\src\\main\\resources\\Snowy.PNG"));
+			try {
+			    URL snowyURL = new URL("https://i.imgur.com/1KtqzM0.png");
+			    dayButton.setIcon(new ImageIcon(snowyURL));
+			} 
+			catch (MalformedURLException e) {
+				System.out.println("oops");
+			}
 		}
 		else {
-			dayButton.setIcon(new ImageIcon("C:\\Users\\Xander.IMPERATOR\\Documents\\Actual Documents\\Software Engineering\\MavenExample2\\src\\main\\resources\\Sunny.PNG"));
+			try {
+			    URL sunnyURL = new URL("https://i.imgur.com/5pHURGv.png");
+			    dayButton.setIcon(new ImageIcon(sunnyURL));
+			} 
+			catch (MalformedURLException e) {
+				System.out.println("oops");
+			}
 		}
 				
 		if (day == cal2.get(Calendar.DATE) && month == cal2.get(Calendar.MONTH) && year == cal2.get(Calendar.YEAR)) {	// Current Day
 			if (eventMonth == month+1 && eventDay == day ) {
-				dayButton.setText("<html>Temperature: " + df.format(maxTemp) + "/" + df.format(minTemp) + "Â°F" + "<br><br><br>" + "Event: " + eventName + "<br><br>" + "Location: " + eventLoc);
+				dayButton.setText("<html>Temperature: " + df.format(maxTemp) + "/" + df.format(minTemp) + "°F" + "<br><br><br>" + "Event: " + eventName + "<br><br>" + "Location: " + eventLoc);
 			} else {
-				dayButton.setText("<html>Temperature: " + df.format(maxTemp) + "/" + df.format(minTemp) + "Â°F");
+				dayButton.setText("<html>Temperature: " + df.format(maxTemp) + "/" + df.format(minTemp) + "°F");
 			}
 			dayButton.setBackground(new Color(51,153,255));
 		}else {

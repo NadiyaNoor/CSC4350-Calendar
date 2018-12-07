@@ -29,6 +29,10 @@ public class ContactList extends javax.swing.JFrame {
         
       
     }
+    
+    public void activateList() {
+    	initComponents();
+    }
  
     /**
      * This method is called from within the constructor to initialize the form.

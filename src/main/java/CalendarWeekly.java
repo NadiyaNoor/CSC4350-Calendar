@@ -208,9 +208,9 @@ public class CalendarWeekly {
 			if (dayOfWeek2 == cal2.get(Calendar.DATE) && cal.get(Calendar.MONTH) == cal2.get(Calendar.MONTH) 
 					&& cal.get(Calendar.YEAR) == cal2.get(Calendar.YEAR)) {	// Current Day
 				if (eventMonth == month+1 && eventDay == dayOfWeek2 ) {
-					dayButton[x].setText("<html>" + columns[x] + " " + dayOfWeek2 + "<br>Temperature: " + df.format(maxTemp) + "/" + df.format(minTemp) + "Â°F" + "<br><br><br>" + "Event: " + eventName + "<br><br>" + "Location: " + eventLoc);
+					dayButton[x].setText("<html>" + columns[x] + " " + dayOfWeek2 + "<br>Temperature: " + df.format(maxTemp) + "/" + df.format(minTemp) + "°F" + "<br><br><br>" + "Event: " + eventName + "<br><br>" + "Location: " + eventLoc);
 				} else {
-					dayButton[x].setText("<html>" + columns[x] + " " + dayOfWeek2 + "<br>Temperature: " + df.format(maxTemp) + "/" + df.format(minTemp) + "Â°F");
+					dayButton[x].setText("<html>" + columns[x] + " " + dayOfWeek2 + "<br>Temperature: " + df.format(maxTemp) + "/" + df.format(minTemp) + "°F");
 				}
 				dayButton[x].setBackground(new Color(51,153,255));
 			}else {
