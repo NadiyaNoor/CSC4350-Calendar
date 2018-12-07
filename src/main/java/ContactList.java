@@ -54,7 +54,7 @@ public class ContactList extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Arial", 0, 28)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("Contact LIst");
+        jLabel1.setText("Contact List");
 
         jButton1.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jButton1.setText("Add");
